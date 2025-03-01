@@ -42,7 +42,7 @@ docker compose up
 ```
 
 ## Architecture Diagram
-[Architecture Diagram](URL_TO_YOUR_IMAGE)
+[Architecture Diagram](https://raw.githubusercontent.com/Devblaise/devops-recipe-app-api/refs/heads/main/assets/Architecture%20diagram.png)
 
 ## Documentation
 
