@@ -1,9 +1,7 @@
 
 # DevOps Deployment Automation with Terraform, AWS and Docker 
+
 ## Local Development
-
-### Running Project
-
 This project is designed to support a scalable, secure, and efficient deployment of an API service using AWS services such as ECS, ALB, RDS, and various networking and security components.
 
 Follow the below steps to run a local development environment.
