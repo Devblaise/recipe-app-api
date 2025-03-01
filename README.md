@@ -4,7 +4,7 @@
 
 ### Running Project
 
-This project runs using Docker. It should work consistently on Windows, macOS or Linux machines.
+This project is designed to support a scalable, secure, and efficient deployment of an API service using AWS services such as ECS, ALB, RDS, and various networking and security components.
 
 Follow the below steps to run a local development environment.
 
@@ -44,13 +44,22 @@ docker compose up
 ## Architecture Diagram
 [Architecture Diagram](https://raw.githubusercontent.com/Devblaise/devops-recipe-app-api/refs/heads/main/assets/Architecture%20diagram.png)
 
-## Documentation
+## Data Flow Summary
 
-This section contains supplementary documentation for the project steps.
+Users send HTTPS requests to the ALB.
 
-### AWS CLI
+ALB forwards requests to the ECS cluster.
 
-#### AWS CLI Authentication
+API services process requests, interact with the database, and store files in EFS if necessary.
+
+Logs and metrics are collected in CloudWatch.
+
+Admins use SSM to securely manage infrastructure.
+
+CI/CD pipelines deploy and update services via GitLab/GitHub.
+
+
+## AWS CLI Authentication
 
 This project uses [aws-vault](https://github.com/99designs/aws-vault) to authenticate with the AWS CLI in the terminal.
 
