@@ -41,6 +41,9 @@ docker compose down --volumes
 docker compose up
 ```
 
+## Architecture Diagram
+[Architecture Diagram](URL_TO_YOUR_IMAGE)
+
 ## Documentation
 
 This section contains supplementary documentation for the project steps.
