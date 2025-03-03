@@ -44,17 +44,17 @@ docker compose up
 
 ## Data Flow Summary
 
-Users send HTTPS requests to the ALB.
+- Users send HTTPS requests to the ALB.
 
-ALB forwards requests to the ECS cluster.
+- ALB forwards requests to the ECS cluster.
 
-API services process requests, interact with the database, and store files in EFS if necessary.
+- API services process requests, interact with the database, and store files in EFS if necessary.
 
-Logs and metrics are collected in CloudWatch.
+- Logs and metrics are collected in CloudWatch.
 
-Admins use SSM to securely manage infrastructure.
+- Admins use SSM to securely manage infrastructure.
 
-CI/CD pipelines deploy and update services via GitLab/GitHub.
+- CI/CD pipelines deploy and update services via GitLab/GitHub.
 
 
 ## AWS CLI Authentication
